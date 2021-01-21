@@ -46,9 +46,12 @@ class MainActivity : AppCompatActivity() {
 
         }//btnLista
 
-        btnVerifica.setOnClickListener {
-            verificarSMS()
-        }
+        btnSalir.setOnClickListener {
+
+            hilo!!.terminar()
+            finish()
+
+        }//btnSalir
 
 
     }//onCreate
@@ -75,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             (0..total).forEach {
 
                 var sms = data[it]
-                var item = "Numero de telefono"+sms.numero+"\n"+"Plataforma buscada: "+sms.plataforma+"\n"+"Respondido: "+sms.respondido
+                var item = "Numero de telefono: "+sms.numero+"\n"+"Plataforma buscada: "+sms.plataforma+"\n"+"Respondido: "+sms.respondido
                 vector[it] = item
 
             }//forEach
