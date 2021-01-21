@@ -1,0 +1,8 @@
+Mandar solo una de las siguientes palabras: 
+	
+--NETFLIX
+--HBO 
+--DISNEY
+
+Sin espacion al principio o al final
+No importa si es en minuscula o mayuscula
